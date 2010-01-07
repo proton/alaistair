@@ -1,0 +1,2 @@
+all: Makefile libastral.c alaistair.c config.h game.h config.c game.c ascii_uni.c pc_out.c pc_chksum.c build_ls.c build_gs.c build_game.c recv_ls.c recv_gs.c recv_game.c net_ls.c net_gs.c
+		gcc -o alaistair /usr/lib/libcrypto.so libastral.c config.h game.h game.c config.c ascii_uni.c pc_out.c pc_chksum.c build_ls.c build_gs.c build_game.c recv_ls.c recv_gs.c recv_game.c net_ls.c net_gs.c alaistair.c -lpthread
